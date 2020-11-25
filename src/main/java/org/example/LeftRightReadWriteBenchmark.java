@@ -107,13 +107,13 @@ public class LeftRightReadWriteBenchmark {
 
     // Synchronized Hash Map
 
-    @Benchmark @Threads(8)
+    @Benchmark @GroupThreads(8)
     @Group("SynchronizedMap")
     public Boolean synchronizedMapRead(ThreadState threadState) {
         return synchronizedMap.get(ints[threadState.index++ & MASK]);
     }
 
-    @Benchmark @Threads(1)
+    @Benchmark @GroupThreads(1)
     @Group("SynchronizedMap")
     public Boolean synchronizedMapWrite(ThreadState threadState) {
         return synchronizedMap.get(ints[threadState.index++ & MASK]);
