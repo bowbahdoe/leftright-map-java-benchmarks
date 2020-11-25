@@ -75,7 +75,7 @@ THE POSSIBILITY OF SUCH DAMAGE.
         <dependency>
             <groupId>com.github.bowbahdoe</groupId>
             <artifactId>leftright-map-java</artifactId>
-            <version>35a4c72</version>
+            <version>dc1ac59</version>
         </dependency>
     </dependencies>
 
